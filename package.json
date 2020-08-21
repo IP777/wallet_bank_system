@@ -2,7 +2,6 @@
 	"name": "wallet_bank_system",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://IP777/wallet_bank_system/",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.4.0",
 		"@testing-library/jest-dom": "^4.2.4",
