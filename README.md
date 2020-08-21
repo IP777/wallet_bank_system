@@ -2,6 +2,8 @@
 
 ### `npm start`
 
+Локальная сборка проекта
+
 ### `npm run build`
 
 Деплой на gh-pages

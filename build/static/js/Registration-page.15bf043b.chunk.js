@@ -1,2 +1,0 @@
-(this.webpackJsonpwallet_bank_system=this.webpackJsonpwallet_bank_system||[]).push([[2],{37:function(t,e,a){t.exports={text:"RegistrationPage_text__4qCkg"}},41:function(t,e,a){"use strict";a.r(e);var n=a(0),s=a.n(n),i=a(37),r=a.n(i);e.default=function(){return s.a.createElement("div",{className:r.a.text},"Registration Page!!!")}}}]);
-//# sourceMappingURL=Registration-page.15bf043b.chunk.js.map

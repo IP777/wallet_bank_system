@@ -1,2 +1,0 @@
-(this.webpackJsonpwallet_bank_system=this.webpackJsonpwallet_bank_system||[]).push([[3],{36:function(t,e,s){t.exports={text:"StatisticsPage_text__2mYEv"}},40:function(t,e,s){"use strict";s.r(e);var a=s(0),n=s.n(a),i=s(36),c=s.n(i);e.default=function(){return n.a.createElement("div",{className:c.a.text},"Statistics Page!!!")}}}]);
-//# sourceMappingURL=Statistics-page.fe5a679b.chunk.js.map
