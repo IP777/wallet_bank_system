@@ -1,0 +1,38 @@
+{
+  "files": {
+    "Home-page.css": "/wallet_bank_system/static/css/Home-page.e21b6018.chunk.css",
+    "Home-page.js": "/wallet_bank_system/static/js/Home-page.90007af0.chunk.js",
+    "Home-page.js.map": "/wallet_bank_system/static/js/Home-page.90007af0.chunk.js.map",
+    "Login-page.css": "/wallet_bank_system/static/css/Login-page.bf94f5dd.chunk.css",
+    "Login-page.js": "/wallet_bank_system/static/js/Login-page.de758cd6.chunk.js",
+    "Login-page.js.map": "/wallet_bank_system/static/js/Login-page.de758cd6.chunk.js.map",
+    "Registration-page.css": "/wallet_bank_system/static/css/Registration-page.b3433219.chunk.css",
+    "Registration-page.js": "/wallet_bank_system/static/js/Registration-page.15bf043b.chunk.js",
+    "Registration-page.js.map": "/wallet_bank_system/static/js/Registration-page.15bf043b.chunk.js.map",
+    "Statistics-page.css": "/wallet_bank_system/static/css/Statistics-page.1ce116b9.chunk.css",
+    "Statistics-page.js": "/wallet_bank_system/static/js/Statistics-page.fe5a679b.chunk.js",
+    "Statistics-page.js.map": "/wallet_bank_system/static/js/Statistics-page.fe5a679b.chunk.js.map",
+    "main.css": "/wallet_bank_system/static/css/main.89d250d1.chunk.css",
+    "main.js": "/wallet_bank_system/static/js/main.c672a676.chunk.js",
+    "main.js.map": "/wallet_bank_system/static/js/main.c672a676.chunk.js.map",
+    "runtime-main.js": "/wallet_bank_system/static/js/runtime-main.1727e444.js",
+    "runtime-main.js.map": "/wallet_bank_system/static/js/runtime-main.1727e444.js.map",
+    "static/js/6.d00b8930.chunk.js": "/wallet_bank_system/static/js/6.d00b8930.chunk.js",
+    "static/js/6.d00b8930.chunk.js.map": "/wallet_bank_system/static/js/6.d00b8930.chunk.js.map",
+    "index.html": "/wallet_bank_system/index.html",
+    "precache-manifest.d18c396f8db28f7fab3cf0b8f5cdd0d3.js": "/wallet_bank_system/precache-manifest.d18c396f8db28f7fab3cf0b8f5cdd0d3.js",
+    "service-worker.js": "/wallet_bank_system/service-worker.js",
+    "static/css/Home-page.e21b6018.chunk.css.map": "/wallet_bank_system/static/css/Home-page.e21b6018.chunk.css.map",
+    "static/css/Login-page.bf94f5dd.chunk.css.map": "/wallet_bank_system/static/css/Login-page.bf94f5dd.chunk.css.map",
+    "static/css/Registration-page.b3433219.chunk.css.map": "/wallet_bank_system/static/css/Registration-page.b3433219.chunk.css.map",
+    "static/css/Statistics-page.1ce116b9.chunk.css.map": "/wallet_bank_system/static/css/Statistics-page.1ce116b9.chunk.css.map",
+    "static/css/main.89d250d1.chunk.css.map": "/wallet_bank_system/static/css/main.89d250d1.chunk.css.map",
+    "static/js/6.d00b8930.chunk.js.LICENSE.txt": "/wallet_bank_system/static/js/6.d00b8930.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1727e444.js",
+    "static/js/6.d00b8930.chunk.js",
+    "static/css/main.89d250d1.chunk.css",
+    "static/js/main.c672a676.chunk.js"
+  ]
+}
