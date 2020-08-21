@@ -1,0 +1,2 @@
+(this.webpackJsonpwallet_bank_system=this.webpackJsonpwallet_bank_system||[]).push([[0],{35:function(e,t,a){e.exports={text:"HomePage_text__3YIAn"}},39:function(e,t,a){"use strict";a.r(t);var n=a(0),s=a.n(n),c=a(35),o=a.n(c);t.default=function(){return s.a.createElement("div",{className:o.a.text},"Home Page!!!")}}}]);
+//# sourceMappingURL=Home-page.90007af0.chunk.js.map

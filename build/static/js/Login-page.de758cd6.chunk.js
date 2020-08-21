@@ -1,0 +1,2 @@
+(this.webpackJsonpwallet_bank_system=this.webpackJsonpwallet_bank_system||[]).push([[1],{38:function(t,e,n){t.exports={text:"LoginPage_text__3r8OD"}},42:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n.n(a),i=n(38),c=n.n(i);e.default=function(){return s.a.createElement("div",{className:c.a.text},"Login Page!!!")}}}]);
+//# sourceMappingURL=Login-page.de758cd6.chunk.js.map
