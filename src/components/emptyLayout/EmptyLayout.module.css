@@ -20,10 +20,10 @@
 /* tablet */
 @media (min-width: 320px) {
 	.wrapper {
-		background: url(./img/bg-login-tablet.jpg);
+		background: url(../../assets/imgs/bg-login-tablet.jpg);
 	}
 	.wrapperReg {
-		background: url(./img/bg-register-tablet.jpg);
+		background: url(../../assets/imgs/bg-register-tablet.jpg);
 	}
 }
 
@@ -42,11 +42,13 @@
 	.sideBlock {
 		height: 850px;
 		width: 510px;
-		background: url(./img/Wallet-login-desktop.jpg) center no-repeat;
+		background: url(../../assets/imgs/Wallet-login-desktop.jpg) center
+			no-repeat;
 	}
 	.sideBlockReg {
 		height: 850px;
 		width: 510px;
-		background: url(./img/Wallet-registration-desktop.jpg) center no-repeat;
+		background: url(../../assets/imgs/Wallet-registration-desktop.jpg)
+			center no-repeat;
 	}
 }
