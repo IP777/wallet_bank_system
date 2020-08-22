@@ -23,24 +23,19 @@ const AsyncLogin = lazy(() =>
 
 const App = () => {
 	return (
-		<>
-			<div className="App">
-				<p>App Page</p>
-			</div>
-			<Suspense
-				fallback={
-					<div className={style.loader}>Please wait Loading...</div>
-				}
-			>
-				<Switch>
-					<Route path="/" exact component={AsyncHome} />
-					<Route path="/statistics" component={AsyncStatistics} />
-					<Route path="/registration" component={AsyncRegistration} />
-					<Route path="/login" component={AsyncLogin} />
-					<Route component={NotFoundPage} />
-				</Switch>
-			</Suspense>
-		</>
+		<Suspense
+			fallback={
+				<div className={style.loader}>Please wait Loading...</div>
+			}
+		>
+			<Switch>
+				<Route path="/" exact component={AsyncHome} />
+				<Route path="/statistics" component={AsyncStatistics} />
+				<Route path="/registration" component={AsyncRegistration} />
+				<Route path="/login" component={AsyncLogin} />
+				<Route component={NotFoundPage} />
+			</Switch>
+		</Suspense>
 	);
 };
 
