@@ -1,0 +1,33 @@
+.applyPassword-input {
+  background: url(../../assets/imgs/lock/1x/baseline_lock_black_18dp.png) no-repeat center left;
+  padding-left: 20px;
+}
+.password-input {
+  background: url(../../assets/imgs/lock/1x/baseline_lock_black_18dp.png) no-repeat center left;
+  padding-left: 20px;
+}
+.name-input {
+  background: url(../../assets/imgs/accountbox/1x/baseline_account_box_black_18dp.png) no-repeat center left;
+  padding-left: 20px;
+}
+.email-input {
+  background: url(../../assets/imgs/e-mail/1x/baseline_email_black_18dp.png) no-repeat center left;
+  padding-left: 20px;
+}
+.sign-up-wrapper {
+  min-width: 320px;
+   
+}
+
+/* .form-container {
+  display: flex;
+  min-width:320px ;
+ 
+} */
+.sign-up-form {
+  width: 320px;
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
