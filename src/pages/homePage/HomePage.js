@@ -1,13 +1,17 @@
 import React from "react";
 import style from "./HomePage.module.css";
-import TableTransactions from "../../components/TableTransactions/TableTransactions";
+
+import Header from "../../components/header/Header";
 
 const HomePage = () => {
-  return (
-    <div>
+    return (
+        <>
+            <Header />
+            <div className={style.text}>Home Page!!!</div>
       <TableTransactions />
-    </div>
-  );
+        </>
+    );
+
 };
 
 export default HomePage;
