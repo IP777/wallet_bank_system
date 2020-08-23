@@ -7,12 +7,15 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <div className={style.text}>Home Page!!!</div>
-      <div className={style.container}>
-        <div className={style.SideBar}>
-          <SideBar />
+      <div className={style.mainContainer}>
+        <div className={style.container}>
+          <div className={style.SideBar}>
+            <SideBar />
+          </div>
+          <div className={style.content}>
+            <p>table</p>
+          </div>
         </div>
-        <div>HomePage</div>
       </div>
     </>
   );

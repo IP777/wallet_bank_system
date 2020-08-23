@@ -7,29 +7,27 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div className={style.sideBar}>
-      <div className={style.linkLst}>
-        <div className={style.linkItem}>
-          <Link
-            className={style.link}
-            to={{
-              pathname: `/`,
-            }}
-          >
-            <HomeIcon className={style.linkSvg} />
-            Главная
-          </Link>
-        </div>
-        <div className={style.linkItem}>
-          <Link
-            className={style.link}
-            to={{
-              pathname: `/statistics`,
-            }}
-          >
-            <StatisticsIcon className={style.linkSvg} />
-            Статистика
-          </Link>
-        </div>
+      <div className={style.linkItem}>
+        <Link
+          className={style.link}
+          to={{
+            pathname: `/`,
+          }}
+        >
+          <HomeIcon className={style.linkSvg} />
+          Главная
+        </Link>
+      </div>
+      <div className={style.linkItem}>
+        <Link
+          className={style.link}
+          to={{
+            pathname: `/statistics`,
+          }}
+        >
+          <StatisticsIcon className={style.linkSvg} />
+          Статистика
+        </Link>
       </div>
     </div>
   );
