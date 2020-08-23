@@ -5,9 +5,7 @@
 }
 .password-input {
   background: url(../../assets/imgs/lock/baseline-lock-24px.svg) no-repeat center left #f9fbfb;
-  padding-left: 30px;
-  
-  
+  padding-left: 30px;  
 }
 .name-input {
   background: url(../../assets/imgs/accountbox/baseline-account_box-24px.svg) no-repeat center left #f9fbfb;
@@ -20,22 +18,14 @@
   
 }
 
-
-/* .form-container {
-  display: flex;
-  min-width:320px ;
- 
-} */
 @media  (min-width: 320px) and (max-width: 549px) {
   .sign-up-wrapper {
-    min-width: 320px;
-    /* height: 390px; */
+    min-width: 320px;    
     margin: 0 auto;
          
   }  
 .sign-up-form {
-  width: 278px;
-  /* height: 300px; */
+  width: 278px;  
   margin: 0 auto;
   height: 375px;
   display: flex;
@@ -109,8 +99,7 @@
   
   }
   .sign-up-wrapper {
-    min-width: 550px;
-    /* height: 390px; */
+    min-width: 550px;    
     margin: 0 auto;
     background: #ffffff;
     padding-bottom: 20px;
@@ -125,8 +114,7 @@
 .sign-up-form {
   width: 440px;
   height: 410px;
-  margin: 0 auto;
-  /* height: 375px; */
+  margin: 0 auto; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,8 +184,7 @@
 .sign-up-form {
   width: 440px;
   height: 410px;
-  margin: 0 auto;
-  /* height: 375px; */
+  margin: 0 auto;  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
