@@ -18,7 +18,7 @@
 }
 
 /* tablet */
-@media (min-width: 320px) {
+@media (min-width: 549px) {
 	.wrapper {
 		background: url(../../assets/imgs/bg-login-tablet.jpg);
 	}
@@ -28,7 +28,7 @@
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
 	.wrapper {
 		background: #f8fefd;
 		justify-content: start;
