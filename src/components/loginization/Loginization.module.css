@@ -1,0 +1,34 @@
+.container {
+  background-color: #FFFFFF;
+  width: 321px;
+  height: 569px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 276px;
+  height: 40px;
+  border: none;
+  margin-top: 30px;
+  color:#FFFFFF;
+  background: #FC842C;
+  font-size: 15px;
+  font-family: HelveticaNeueCyr-Bold,AdobeInvisFont,MyriadPro-Regular;
+}
+
+.form {
+  border: none;
+  opacity: 1;
+  width: 276px;
+  height: 49px;
+}
+
+.registry_link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+ .link {
+  color: #6b7d83;
+  font-size: 12px;
+}

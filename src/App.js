@@ -25,7 +25,7 @@ const App = () => {
 	return (
 		<>
 			<div className="App">
-				<p>App Page</p>
+				<p>App Page 26</p>
 			</div>
 			<Suspense
 				fallback={

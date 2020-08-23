@@ -1,8 +1,8 @@
 import React from "react";
-import style from "./LoginPage.module.css";
+import Loginization from "../../components/loginization/Loginization"
 
 const LoginPage = () => {
-	return <div className={style.text}>Login Page!!!</div>;
+	return <Loginization />;
 };
 
 export default LoginPage;
