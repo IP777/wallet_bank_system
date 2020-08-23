@@ -2,8 +2,8 @@ import React from "react";
 import transactions from "../../../templateData/transactions.json";
 import style from "./TableTransactionsMobile.module.css";
 
-const TableTransactionsMobile = () => {
-  return transactions.map((item) => {
+const TableTransactionsMobile = () =>
+  transactions.map((item) => {
     return (
       <table
         className={[
@@ -49,6 +49,5 @@ const TableTransactionsMobile = () => {
       </table>
     );
   });
-};
 
 export default TableTransactionsMobile;
