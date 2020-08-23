@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
-//
+
 const HomePage = () => {
     return (
         <div className={style.wrapper}>
