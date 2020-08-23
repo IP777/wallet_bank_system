@@ -1,8 +1,14 @@
 import React from "react";
-import style from "./RegistrationPage.module.css";
+//import style from "./RegistrationPage.module.css";
+import EmptyLayout from "../../components/emptyLayout/EmptyLayout";
+// import RegisterComponent from "../../components/tmp/RegisterComponent";
 
 const RegistrationPage = () => {
-	return <div className={style.text}>Registration Page!!!</div>;
+	return (
+		<EmptyLayout>
+			{/* <RegisterComponent /> */}
+		</EmptyLayout>
+	);
 };
 
 export default RegistrationPage;

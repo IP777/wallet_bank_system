@@ -2,22 +2,23 @@ import React from "react";
 import styles from "../loginization/Loginization.module.css"
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
+import { NavLink } from "react-router-dom";
 import { ReactComponent as EmailIcon } from '../../assets/email.svg';
 import { ReactComponent as PasswordIcon } from '../../assets/lock.svg';
 
-
-
-
 const Loginization = () => {
-  return <div className={styles.container}>Loginization Page!!!
+  return (
 
 <form className={styles.form}  noValidate>
+  <div className={styles.logo}/>
+  <div className={styles.wallet}/>
 <TextField
             variant="outlined"
             margin="normal"
             required
             fullWidth
             id="email"
+            color="red"
             placeholder="E-mail"
             InputProps={{
               startAdornment: (
@@ -28,6 +29,7 @@ const Loginization = () => {
             }}
             name="email"
             autoComplete="email"
+            className={styles.input}
           />
           <TextField
             variant="outlined"
@@ -46,9 +48,10 @@ const Loginization = () => {
               ),
             }}      
             autoComplete="current-password"
+            className={styles.input}
+
           />
         
-
 <button
   type="submit"
   name="login"
@@ -57,14 +60,15 @@ const Loginization = () => {
   Войти
 </button>
 <div className={styles.registry_link}>
-<a href="/" className={styles.link}>Регистрация</a>
+<NavLink className={styles.link} to="/registration">
+Регистрация
+</NavLink>
+
 </div>
 
 </form>
-
-
-  </div>;
-  
+ )
+ 
 };
 
 export default Loginization;
