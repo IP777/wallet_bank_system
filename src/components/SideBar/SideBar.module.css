@@ -1,0 +1,28 @@
+.sideBar {
+  padding: 40px 0px;
+  width: 300px;
+  background-color: #284060;
+}
+
+.linkItem {
+  padding-left: 30px;
+}
+
+.link {
+  font-size: 15px;
+  color: #fff;
+}
+
+.linkItem:hover {
+  background-color: #b38f8f;
+  opacity: 0.702;
+}
+
+.linkLst {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkSvg {
+  margin-right: 20px;
+}
