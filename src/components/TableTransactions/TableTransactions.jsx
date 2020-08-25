@@ -1,10 +1,20 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 import TableTransactionsMobile from "./TableTransactionsMobile/TableTransactionsMobile";
 import TableTransactionsDesctop from "./TableTransactionsDesctop/TableTransactionsDesctop";
 
-const TableTransactions = () =>
-  isMobile ? <TableTransactionsMobile /> : <TableTransactionsDesctop />;
+const TableTransactions = () => {
+	const isMobile = useMediaQuery("(min-width:549px)");
+	return (
+		<>
+			{isMobile ? (
+				<TableTransactionsMobile />
+			) : (
+				<TableTransactionsDesctop />
+			)}
+		</>
+	);
+};
 
 export default TableTransactions;
