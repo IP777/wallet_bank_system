@@ -53,7 +53,7 @@ a {
 	background: url(../../assets//imgs/exit-btn.png) center no-repeat;
 }
 
-/* tablet */
+/* tablet/ mobile? */
 @media (min-width: 320px) {
 	.wrapper {
 		height: 80px;
