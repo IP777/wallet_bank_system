@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = (onLogOut) => {
 	return (
 		<div className={style.wrapper}>
 			<NavLink className={style.logo} to="/" />
