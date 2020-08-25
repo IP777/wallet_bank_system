@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const HomePage = () => {
 	return (
 		<div className={style.wrapper}>
 			<NavLink className={style.logo} to="/" />
@@ -16,4 +16,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default HomePage;
