@@ -4,7 +4,12 @@ import EmptyLayout from "../../components/emptyLayout/EmptyLayout";
 // import RegisterComponent from "../../components/tmp/RegisterComponent";
 
 const RegistrationPage = () => {
-	return <EmptyLayout>{/* <RegisterComponent /> */}</EmptyLayout>;
+
+	return (
+		<EmptyLayout>
+			{/* <RegisterComponent /> */}
+		</EmptyLayout>
+	);
 };
 
 export default RegistrationPage;
