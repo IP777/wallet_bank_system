@@ -1,0 +1,53 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	background-color: #f8fefd;
+	height: 100vh;
+}
+.wrapperReg {
+	display: flex;
+	justify-content: center;
+	background-color: #f8fefd;
+	height: 100vh;
+}
+.childrenWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+/* tablet */
+@media (min-width: 549px) {
+	.wrapper {
+		background: url(../../assets/imgs/bg-login-tablet.jpg);
+	}
+	.wrapperReg {
+		background: url(../../assets/imgs/bg-register-tablet.jpg);
+	}
+}
+/* Desktop */
+@media (min-width: 1023px) {
+	.wrapper {
+		background: #f8fefd;
+		justify-content: start;
+		height: 100%;
+	}
+	.wrapperReg {
+		background: #f8fefd;
+		justify-content: start;
+		height: 100%;
+	}
+	.sideBlock {
+		height: 850px;
+		width: 510px;
+		background: url(../../assets/imgs/Wallet-login-desktop.jpg) center
+			no-repeat;
+	}
+	.sideBlockReg {
+		height: 850px;
+		width: 510px;
+		background: url(../../assets/imgs/Wallet-registration-desktop.jpg)
+			center no-repeat;
+	}
+}

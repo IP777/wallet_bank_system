@@ -1,4 +1,6 @@
-# wallet_bank_system
+https://wallet-bank-system.netlify.app
+
+# wallet*bank_system*
 
 Локальный старт проекта
 
@@ -8,6 +10,6 @@
 
 ### `npm run build`
 
-Деплой на gh-pages
+Деплой на netlify деплоить может только вледелец акк netlyfy
 
 ### `npm run deploy`

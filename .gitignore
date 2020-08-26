@@ -2,6 +2,7 @@
 
 package-lock.json
 /tmp
+/src/components/tmp
 
 # dependencies
 /node_modules
@@ -26,3 +27,4 @@ package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock

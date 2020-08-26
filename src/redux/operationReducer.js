@@ -1,15 +1,27 @@
 import { combineReducers } from "redux";
 import { Type } from "./type";
 
-const operationReducer = (state = [], { type, payload }) => {
+const user = (state = {}, { type, payload }) => {
 	switch (type) {
-		case Type.FETCH_POSTS_SUCCESS:
-			return payload.posts;
+		default:
+			return state;
+	}
+};
+const token = (state = null, { type, payload }) => {
+	switch (type) {
+		default:
+			return state;
+	}
+};
+const error = (state = null, { type, payload }) => {
+	switch (type) {
 		default:
 			return state;
 	}
 };
 
 export const rootReducer = combineReducers({
-	operation: operationReducer,
+	user,
+	token,
+	error,
 });
