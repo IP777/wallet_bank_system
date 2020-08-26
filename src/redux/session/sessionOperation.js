@@ -1,5 +1,5 @@
 import { loginRequest, loginSuccess, loginError } from "./sessionAction";
-import sessionApi from "../services/session-api";
+import sessionApi from "../../services/session-api";
 
 export const login = (credentials) => (dispatch) => {
 	dispatch(loginRequest());

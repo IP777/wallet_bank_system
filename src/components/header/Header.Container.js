@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import * as sessionAction from "../../redux/sessionAction";
+import * as sessionAction from "../../redux/session/sessionAction";
 import Header from "./Header";
 
 const mapDispatchToProps = {

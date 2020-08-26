@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import * as sessionOperations from "../../redux/sessionOperation";
-import * as sessionSelectors from "../../redux/sessionSelectors";
+import * as sessionOperations from "../../redux/session/sessionOperation";
+import * as sessionSelectors from "../../redux/session/sessionSelectors";
 import Loginization from "./Loginization";
 
 const mapStateToProps = (state) => ({
