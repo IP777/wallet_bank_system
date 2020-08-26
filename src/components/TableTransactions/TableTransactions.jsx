@@ -5,13 +5,13 @@ import TableTransactionsMobile from "./TableTransactionsMobile/TableTransactions
 import TableTransactionsDesctop from "./TableTransactionsDesctop/TableTransactionsDesctop";
 
 const TableTransactions = () => {
-	const isMobile = useMediaQuery("(min-width:549px)");
+	const isDesktop = useMediaQuery("(min-width:549px)");
 	return (
 		<>
-			{isMobile ? (
-				<TableTransactionsMobile />
-			) : (
+			{isDesktop ? (
 				<TableTransactionsDesctop />
+			) : (
+				<TableTransactionsMobile />
 			)}
 		</>
 	);
