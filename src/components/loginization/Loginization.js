@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom";
 import { ReactComponent as EmailIcon } from "../../assets/email.svg";
 import { ReactComponent as PasswordIcon } from "../../assets/lock.svg";
 
-const Loginization = (props) => {
+const Loginization = ({ onLogin, authenticated }) => {
 	const submitHandle = (e) => {
 		e.preventDefault();
-
+		console.log("submit");
 		//Заглушка для отправки формы
-		props.onLogin({ email: "lol@gmail.com", password: "12345" });
+		onLogin({ email: "lol@gmail.com", password: "12345" });
 	};
 
 	return (
@@ -57,6 +57,9 @@ const Loginization = (props) => {
 				className={styles.input}
 			/>
 
+			<NavLink className={styles.link} to="/">
+				На главную
+			</NavLink>
 			<button type="submit" name="login" className={styles.button}>
 				Войти
 			</button>

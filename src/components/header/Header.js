@@ -2,7 +2,10 @@ import React from "react";
 import style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
-const Header = (onLogOut) => {
+const Header = ({ onLogOut, onLogin }) => {
+	const handelLogout = () => {
+		onLogOut();
+	};
 	return (
 		<div className={style.wrapper}>
 			<NavLink className={style.logo} to="/" />
@@ -10,7 +13,11 @@ const Header = (onLogOut) => {
 				<NavLink className={style.loginBtn} to="/login">
 					Имя
 				</NavLink>
-				<NavLink className={style.logoutBtn} to="/login" />
+				<NavLink
+					className={style.logoutBtn}
+					to="/login"
+					onClick={handelLogout}
+				/>
 			</div>
 		</div>
 	);
