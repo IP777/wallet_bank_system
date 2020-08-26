@@ -53,8 +53,8 @@ a {
 	background: url(../../assets//imgs/exit-btn.png) center no-repeat;
 }
 
-/* tablet */
-@media (min-width: 320px) {
+/* tablet/ mobile? */
+@media (min-width: 549px) {
 	.wrapper {
 		height: 80px;
 		background: #ffffff;
@@ -85,7 +85,7 @@ a {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1023px) {
 	.logo {
 		margin-left: 42px;
 	}
