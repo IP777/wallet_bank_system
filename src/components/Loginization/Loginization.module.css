@@ -1,5 +1,5 @@
 .container {
-  background-color: #F9FBFB;
+  background-color: #f9fbfb;
   width: 321px;
   height: 569px;
   margin: 0 auto;
@@ -10,10 +10,10 @@
   height: 40px;
   border: none;
   margin-top: 30px;
-  color:#FFFFFF;
-  background: #FC842C;
+  color: #ffffff;
+  background: #fc842c;
   font-size: 15px;
-  font-family: HelveticaNeueCyr-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-family: HelveticaNeueCyr-Bold, AdobeInvisFont, MyriadPro-Regular;
   border-radius: 3px;
 }
 
@@ -42,7 +42,6 @@
   border-radius: 5px;
   background-color: #fff;
   padding: 10px;
-  
 }
 
 .registry_link {
@@ -50,21 +49,18 @@
   margin-top: 30px;
 }
 
- .link {
+.link {
   color: #6b7d83;
   font-size: 12px;
 }
 
 .input {
-  background: #F9FBFB;
+  background: #f9fbfb;
   border-radius: 3px;
 }
 
 @media (min-width: 320px) {
-	.form {
-		box-shadow: 0 0 10px #6b6b6b;
+  .form {
+    box-shadow: 0 0 10px #6b6b6b;
   }
-
 }
-  
-  
