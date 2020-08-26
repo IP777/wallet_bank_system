@@ -1,6 +1,6 @@
 .table {
   width: 100%;
-  font-family: "HelveticaNeueCyr", sans-serif;
+  font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 13px;
   font-weight: 400;
   color: #282828;
@@ -8,7 +8,6 @@
 }
 
 .tableHead {
-  font-weight: 400;
   text-align: left;
   padding: 0 14px;
   font-weight: 700;

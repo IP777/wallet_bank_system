@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import style from './App.module.css';
 import NotFoundPage from './pages/NotFoundPage';
+import style from './App.module.css';
 
 //Асинхронная подгрузка страниц + разделение на чанки
 const AsyncHome = lazy(() =>
