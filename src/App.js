@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
-import style from "./App.module.css";
 import NotFoundPage from "./pages/NotFoundPage";
+import style from "./App.module.css";
 
 //Асинхронная подгрузка страниц + разделение на чанки
 const AsyncHome = lazy(() =>
@@ -18,27 +18,23 @@ const AsyncRegistration = lazy(() =>
   )
 );
 const AsyncLogin = lazy(() =>
-  import("./pages/loginPage/LoginPage" /* webpackChunkName: "Login-page" */)
+  import("./pages/loginPage/LoginPage.js" /* webpackChunkName: "Login-page" */)
 );
 
 const App = () => {
-
-	return (
-		<Suspense
-			fallback={
-				<div className={style.loader}>Please wait Loading...</div>
-			}
-		>
-			<Switch>
-				<Route path="/" exact component={AsyncHome} />
-				<Route path="/statistics" component={AsyncStatistics} />
-				<Route path="/registration" component={AsyncRegistration} />
-				<Route path="/login" component={AsyncLogin} />
-				<Route component={NotFoundPage} />
-			</Switch>
-		</Suspense>
-	);
-
+  return (
+    <Suspense
+      fallback={<div className={style.loader}>Please wait Loading...</div>}
+    >
+      <Switch>
+        <Route path="/" exact component={AsyncHome} />
+        <Route path="/statistics" component={AsyncStatistics} />
+        <Route path="/registration" component={AsyncRegistration} />
+        <Route path="/login" component={AsyncLogin} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </Suspense>
+  );
 };
 
 export default App;

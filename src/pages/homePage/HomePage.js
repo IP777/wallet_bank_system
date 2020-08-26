@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./HomePage.module.css";
+
 import Header from "../../components/header/Header";
 import TableTransactions from "../../components/TableTransactions/TableTransactions";
 import ModalPage from "../modalPage/ModalPage";

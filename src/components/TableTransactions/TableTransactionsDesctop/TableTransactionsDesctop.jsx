@@ -1,7 +1,7 @@
-import React from "react";
-import transactions from "../../../templateData/transactions.json";
-import TableRaw from "../TableRaw";
-import style from "./TableTransactionsDesctop.module.css";
+import React from 'react';
+import transactions from '../../../templateData/transactions.json';
+import TableRaw from '../TableRaw';
+import style from './TableTransactionsDesctop.module.css';
 
 const TableTransactionsBrowser = () => (
   <table className={style.table}>
