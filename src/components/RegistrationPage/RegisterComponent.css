@@ -32,7 +32,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
   .input-form {
     width: 275px;
@@ -44,7 +44,7 @@
   }
   .sign-up-button {
     background: #e27a2b;
-    color: #ffffff;
+    color: var(--white-color);
     width: 275px;
     height: 40px;
     border-radius: 5px;
@@ -96,7 +96,7 @@
   .sign-up-wrapper {
     min-width: 550px;
     margin: 0 auto;
-    background: #ffffff;
+    background: var(--white-color);
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 5px;
@@ -113,7 +113,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
   .input-form {
     width: 435px;
@@ -125,7 +125,7 @@
   }
   .sign-up-button {
     background: #e27a2b;
-    color: #ffffff;
+    color: var(--white-color);
     width: 280px;
     height: 40px;
     border-radius: 5px;
@@ -159,7 +159,7 @@
     min-width: 550px;
     /* height: 390px; */
     margin: 0 auto;
-    background: #ffffff;
+    background: var(--white-color);
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 5px;
@@ -177,7 +177,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--white-color);
   }
   .input-form {
     width: 435px;
@@ -189,7 +189,7 @@
   }
   .sign-up-button {
     background: #e27a2b;
-    color: #ffffff;
+    color: var(--white-color);
     width: 280px;
     height: 40px;
     border-radius: 5px;

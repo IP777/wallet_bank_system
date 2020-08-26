@@ -1,19 +1,33 @@
 import React from 'react';
-import style from './Header.module.css';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import style from './Header.module.css';
 
-const Header = () => {
+const Header = ({ userName, isLoggedIn, logout }) => {
   return (
     <div className={style.wrapper}>
       <NavLink className={style.logo} to="/" />
-      <div className={style.btnBlock}>
-        <NavLink className={style.loginBtn} to="/login">
-          Имя
-        </NavLink>
-        <NavLink className={style.logoutBtn} to="/login" />
-      </div>
+
+      {isLoggedIn && (
+        <div className={style.btnBlock}>
+          <span className={style.userName}>{userName}</span>
+          <button className={style.logoutBtn} onClick={logout} />
+        </div>
+      )}
     </div>
   );
+};
+
+Header.propTypes = {
+  userName: PropTypes.string,
+  isLoggedIn: PropTypes.bool,
+  logout: PropTypes.func,
+};
+
+Header.defaultProps = {
+  userName: '',
+  isLoggedIn: true,
+  logout: () => {},
 };
 
 export default Header;

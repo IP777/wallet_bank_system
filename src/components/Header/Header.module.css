@@ -1,12 +1,3 @@
-@font-face {
-  font-family: HelveticaNeueCyr;
-  src: url(../../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf);
-}
-
-a {
-  text-decoration: none;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -35,14 +26,14 @@ a {
   display: flex;
   align-items: center;
   color: white;
-  margin-right: 6px;
   font-family: HelveticaNeueCyr;
+  margin-right: 6px;
 }
 
-.loginBtn {
+.userName {
   margin-right: 20px;
   opacity: 0.5;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .logoutBtn {
@@ -50,14 +41,14 @@ a {
   margin-right: 7px;
   height: 17px;
   width: 17px;
-  background: url(../../assets//imgs/exit-btn.png) center no-repeat;
+  background: url(../../assets/imgs/exit-btn.png) center no-repeat;
 }
 
 /* tablet/ mobile? */
 @media (min-width: 549px) {
   .wrapper {
     height: 80px;
-    background: #ffffff;
+    background: var(--white-color);
     box-shadow: 0 0 10px #6b6b6b;
   }
 
@@ -70,15 +61,21 @@ a {
 
   .logoutBtn {
     margin-right: 84px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
   }
+
   .logoutBtn::after {
     position: relative;
     left: 20px;
+    font-size: 16px;
     content: 'Выйти';
     font-family: HelveticaNeueCyr;
     color: #6b7d83;
   }
-  .loginBtn {
+
+  .userName {
     opacity: 1;
     color: #6b7d83;
   }
