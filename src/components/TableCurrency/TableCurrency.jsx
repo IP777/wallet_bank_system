@@ -1,6 +1,6 @@
-import React from "react";
-import style from "./TableCurrency.module.css";
-import currency from "../../templateData/currency.json";
+import React from 'react';
+import style from './TableCurrency.module.css';
+import currency from '../../templateData/currency.json';
 
 const TableCurrency = () => (
   <table className={style.table}>
