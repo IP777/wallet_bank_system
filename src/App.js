@@ -29,10 +29,10 @@ const App = ({ authenticated }) => {
 			}
 		>
 			<Switch>
-				{/* <Route path="/" exact component={AsyncHome} > */}
-				<Route path="/" exact>
+				<Route path="/" exact component={AsyncHome} />
+				{/* <Route path="/" exact>
 					{authenticated ? <AsyncHome /> : <Redirect to="/login" />}
-				</Route>
+				</Route> */}
 				<Route path="/statistics" component={AsyncStatistics} />
 				<Route path="/registration" component={AsyncRegistration} />
 				<Route path="/login" component={AsyncLogin} />
