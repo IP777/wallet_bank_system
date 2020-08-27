@@ -1,8 +1,9 @@
-import React from 'react';
-import style from './HomePage.module.css';
+import React from "react";
+import style from "./HomePage.module.css";
 
-import Header from '../../containers/Header';
-import TableTransactions from '../../components/TableTransactions/TableTransactions';
+import Header from "../../components/header/Header";
+import TableTransactions from "../../components/TableTransactions/TableTransactions";
+import ModalPage from "../modalPage/ModalPage";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <div className={style.text}>Home Page!!!</div>
       <TableTransactions />
+      <ModalPage />
     </>
   );
 };
