@@ -18,7 +18,7 @@ const AsyncRegistration = lazy(() =>
   )
 );
 const AsyncLogin = lazy(() =>
-  import('./pages/LoginPage/LoginPage' /* webpackChunkName: "Login-page" */)
+  import('./pages/LoginPage/LoginPage.js' /* webpackChunkName: "Login-page" */)
 );
 
 const App = () => {
