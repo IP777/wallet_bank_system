@@ -1,24 +1,24 @@
-import React, { lazy, Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
-import NotFoundPage from "./pages/NotFoundPage";
-import style from "./App.module.css";
+import React, { lazy, Suspense } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import NotFoundPage from './pages/NotFoundPage';
+import style from './App.module.css';
 
 //Асинхронная подгрузка страниц + разделение на чанки
 const AsyncHome = lazy(() =>
-  import("./pages/homePage/HomePage.js" /* webpackChunkName: "Home-page" */)
+  import('./pages/HomePage/HomePage.js' /* webpackChunkName: "Home-page" */)
 );
 const AsyncStatistics = lazy(() =>
   import(
-    "./pages/statisticsPage/StatisticsPage.js" /* webpackChunkName: "Statistics-page" */
+    './pages/StatisticsPage/StatisticsPage.js' /* webpackChunkName: "Statistics-page" */
   )
 );
 const AsyncRegistration = lazy(() =>
   import(
-    "./pages/registrationPage/RegistrationPage.js" /* webpackChunkName: "Registration-page" */
+    './pages/RegistrationPage/RegistrationPage.js' /* webpackChunkName: "Registration-page" */
   )
 );
 const AsyncLogin = lazy(() =>
-  import("./pages/loginPage/LoginPage.js" /* webpackChunkName: "Login-page" */)
+  import('./pages/LoginPage/LoginPage.js' /* webpackChunkName: "Login-page" */)
 );
 
 const App = () => {

@@ -1,39 +1,39 @@
-import React, { Component } from "react";
-import Modal from "@material-ui/core/Modal";
-import Radio from "@material-ui/core/Radio";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
-import { RadioGroup } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
-import Fab from "@material-ui/core/Fab";
-import AddIcon from "@material-ui/icons/Add";
-import styles from "./modal.module.css";
+import React, { Component } from 'react';
+import Modal from '@material-ui/core/Modal';
+import Radio from '@material-ui/core/Radio';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import TextField from '@material-ui/core/TextField';
+import MenuItem from '@material-ui/core/MenuItem';
+import { RadioGroup } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import styles from './Modal.module.css';
 
 const currenciesList = [
   {
-    value: "other",
-    label: "Разное",
+    value: 'other',
+    label: 'Разное',
   },
   {
-    value: "car",
-    label: "Машина",
+    value: 'car',
+    label: 'Машина',
   },
   {
-    value: "products",
-    label: "Продукти",
+    value: 'products',
+    label: 'Продукти',
   },
   {
-    value: "regular incame",
-    label: "Регулярный доход",
+    value: 'regular incame',
+    label: 'Регулярный доход',
   },
   {
-    value: "irregular incame",
-    label: "Нерегулярный дохід",
+    value: 'irregular incame',
+    label: 'Нерегулярный дохід',
   },
 ];
 
-export default class modal extends Component {
+export default class ModalPage extends Component {
   state = {
     open: false,
     isRenderCategory: true,
@@ -46,7 +46,7 @@ export default class modal extends Component {
   };
   handleClick = (e) => {
     const value = e.target.value;
-    if (value === "in") {
+    if (value === 'in') {
       this.setState({ isRenderCategory: true });
     } else {
       this.setState({ isRenderCategory: false });
@@ -88,7 +88,7 @@ export default class modal extends Component {
               label="Категория"
               className={styles.select}
               style={{
-                display: isRenderCategory ? "none" : "inline-flex",
+                display: isRenderCategory ? 'none' : 'inline-flex',
               }}
             >
               {currenciesList.map((item) => (
@@ -120,7 +120,7 @@ export default class modal extends Component {
       <div>
         <div className={styles.btnCircle}>
           <Fab
-            style={{ color: "white", backgroundColor: "#e56100" }}
+            style={{ color: 'white', backgroundColor: '#e56100' }}
             onClick={this.handleOpen}
           >
             <AddIcon />
