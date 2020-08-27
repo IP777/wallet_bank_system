@@ -1,8 +1,6 @@
 import React from 'react';
 import style from './Balance.module.css';
 
-console.log(style);
-
 export const Balance = () => {
   return (
     <>
