@@ -1,11 +1,11 @@
 import React from 'react';
 import style from './Balance.module.css';
 
-export const Balance = () => {
+export const Balance = ({ balance }) => {
   return (
       <div className={style.balance}>
         <p>Баланс</p>
-        <span>24 000.00 грн</span>
+        <span>{balance}</span>
       </div>
   );
 };
