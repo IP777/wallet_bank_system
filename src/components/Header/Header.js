@@ -5,6 +5,7 @@ import style from './Header.module.css';
 
 const Header = ({ userName, isLoggedIn, logout }) => {
   const handelLogout = () => {
+    console.log('Click');
     logout();
   };
   return (
@@ -16,7 +17,7 @@ const Header = ({ userName, isLoggedIn, logout }) => {
           <NavLink className={style.loginBtn} to="/login">
             Имя
           </NavLink>
-          <NavLink
+          <button
             className={style.logoutBtn}
             to="/login"
             onClick={handelLogout}
