@@ -17,16 +17,7 @@ const PieChartTable = ({ data }) => (
               backgroundColor: item.color,
             }}
           ></td>
-          <td className={css.table}>
-            <span
-              style={{
-                backgroundColor: "red",
-                width: "15px",
-                height: "15px",
-              }}
-            ></span>
-            {item.title}
-          </td>
+          <td className={css.table}>{item.title}</td>
           <td className={css.table}> {item.value} </td>
         </tr>
       ))}
