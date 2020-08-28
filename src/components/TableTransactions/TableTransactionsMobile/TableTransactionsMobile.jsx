@@ -1,6 +1,6 @@
-import React from "react";
-import transactions from "../../../templateData/transactions.json";
-import style from "./TableTransactionsMobile.module.css";
+import React from 'react';
+import transactions from '../../../templateData/transactions.json';
+import style from './TableTransactionsMobile.module.css';
 
 const TableTransactionsMobile = () =>
   transactions.map((item) => {
@@ -8,8 +8,8 @@ const TableTransactionsMobile = () =>
       <table
         className={[
           style.table,
-          item.type === "+" ? style.tableIncome : style.tableSpend,
-        ].join(" ")}
+          item.type === '+' ? style.tableIncome : style.tableSpend,
+        ].join(' ')}
       >
         <tbody>
           <tr className={style.tableRaw}>
@@ -33,10 +33,10 @@ const TableTransactionsMobile = () =>
             <td
               className={[
                 style.tableCell,
-                item.type === "+"
+                item.type === '+'
                   ? style.tableAmountIncome
                   : style.tableAmountSpend,
-              ].join(" ")}
+              ].join(' ')}
             >
               {item.amount}
             </td>
