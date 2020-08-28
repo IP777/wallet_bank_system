@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../loginization/Loginization.module.css";
+import styles from "./Loginization.module.css";
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import { NavLink } from "react-router-dom";
