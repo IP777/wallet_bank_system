@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 import style from './Header.module.css';
 
 const Header = ({ userName, isLoggedIn, logout }) => {
+  const handelLogout = () => {
+    logout();
+  };
   return (
     <div className={style.wrapper}>
       <NavLink className={style.logo} to="/" />
@@ -13,7 +16,11 @@ const Header = ({ userName, isLoggedIn, logout }) => {
           <NavLink className={style.loginBtn} to="/login">
             Имя
           </NavLink>
-          <NavLink className={style.logoutBtn} to="/login" />
+          <NavLink
+            className={style.logoutBtn}
+            to="/login"
+            onClick={handelLogout}
+          />
         </div>
       )}
     </div>
@@ -33,23 +40,3 @@ Header.defaultProps = {
 };
 
 export default Header;
-
-// const Header = ({ onLogOut, onLogin }) => {
-// 	const handelLogout = () => {
-// 		onLogOut();
-// 	};
-// 	return (
-// 		<div className={style.wrapper}>
-// 			<NavLink className={style.logo} to="/" />
-// 			<div className={style.btnBlock}>
-// 				<NavLink className={style.loginBtn} to="/login">
-// 					Имя
-// 				</NavLink>
-// 				<NavLink
-// 					className={style.logoutBtn}
-// 					to="/login"
-// 					onClick={handelLogout}
-// 				/>
-// 			</div>
-// 		</div>
-// 	);
