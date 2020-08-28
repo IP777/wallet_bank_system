@@ -1,19 +1,20 @@
 import React from "react";
 import style from "./StatisticsPage.module.css";
 import PieChartComponent from "../../components/PieChart/PieChart3";
+import PieChartTable from "../../components/PieChartTable/PieChartTable";
 
 const StatisticsPage = () => {
-  const chartData = [
-    ["Категории", "Сумма"],
-    ["a", 12],
-    ["b", 5.5],
-    ["c", 10],
-    ["d", 10],
-    ["e", 10],
-    ["f", 10],
-  ];
+  // const chartData = [
+  //   ["Категории", "Сумма"],
+  //   ["a", 12],
+  //   ["b", 5.5],
+  //   ["c", 10],
+  //   ["d", 10],
+  //   ["e", 10],
+  //   ["f", 10],
+  // ];
 
-  const data = [
+  const chartData = [
     { title: "One", value: 10, color: "#E38627" },
     { title: "Two", value: 15, color: "#C13C37" },
     { title: "Three", value: 10, color: "#6A2135" },
@@ -30,7 +31,8 @@ const StatisticsPage = () => {
   return (
     <>
       <div className={style.text}>Statistics Page!!!</div>
-      <PieChartComponent data={data} />
+      <PieChartComponent data={chartData} />
+      <PieChartTable data={chartData} />
     </>
   );
 };
