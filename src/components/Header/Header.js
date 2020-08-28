@@ -10,8 +10,10 @@ const Header = ({ userName, isLoggedIn, logout }) => {
 
       {isLoggedIn && (
         <div className={style.btnBlock}>
-          <span className={style.userName}>{userName}</span>
-          <button className={style.logoutBtn} onClick={logout} />
+          <NavLink className={style.loginBtn} to="/login">
+            Имя
+          </NavLink>
+          <NavLink className={style.logoutBtn} to="/login" />
         </div>
       )}
     </div>
