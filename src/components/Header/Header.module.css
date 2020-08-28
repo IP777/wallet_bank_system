@@ -57,7 +57,7 @@ a {
 @media (min-width: 549px) {
   .wrapper {
     height: 80px;
-    background: #ffffff;
+    background: var(--white-color);
     box-shadow: 0 0 10px #6b6b6b;
   }
 
