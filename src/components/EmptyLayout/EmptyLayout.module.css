@@ -1,13 +1,13 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  background-color: #f8fefd;
+  background-color: var(--primary-background);
   height: 100vh;
 }
 .wrapperReg {
   display: flex;
   justify-content: center;
-  background-color: #f8fefd;
+  background-color: var(--primary-background);
   height: 100vh;
 }
 .childrenWrapper {
@@ -29,12 +29,12 @@
 /* Desktop */
 @media (min-width: 1023px) {
   .wrapper {
-    background: #f8fefd;
+    background: var(--primary-background);
     justify-content: start;
     height: 100%;
   }
   .wrapperReg {
-    background: #f8fefd;
+    background: var(--primary-background);
     justify-content: start;
     height: 100%;
   }
