@@ -1,22 +1,11 @@
-export default {
-	login(credentials) {
-		return new Promise((resolve) => {
-			setTimeout(() => {
-				resolve({
-					user: {},
-					token: "unique-jwt-token",
-				});
-			}, 300);
-		});
-	},
-	signup(credentials) {
-		return new Promise((resolve) => {
-			setTimeout(() => {
-				resolve({
-					user: {},
-					token: "unique-jwt-token",
-				});
-			}, 300);
-		});
-	},
+import { API_URL } from '../constants';
+
+export const loginRequest = (data) => {
+  return fetch(`${API_URL}/api/login`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  }).then((res) => res.json());
 };
