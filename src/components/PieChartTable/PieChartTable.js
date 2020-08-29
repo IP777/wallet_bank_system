@@ -9,7 +9,7 @@ const PieChartTable = ({ data }) => (
         <th className={css.cell}>Сумма</th>
       </tr>
       {data.map((item) => (
-        <tr className={css.row}>
+        <tr key={item.title} className={css.row}>
           <td className={css.colorCell}>
             <span
               className={css.span}
@@ -19,7 +19,7 @@ const PieChartTable = ({ data }) => (
             ></span>
             {item.title}
           </td>
-          <td className={css.cell}> {item.value} </td>
+          <td className={css.valueCell}> {item.value} </td>
         </tr>
       ))}
 
