@@ -11,7 +11,7 @@ const Loginization = ({ onLogin, authenticated }) => {
     e.preventDefault();
     console.log('submit');
     //Заглушка для отправки формы
-    onLogin({ email: 'lol@gmail.com', password: '12345' });
+    onLogin({ email: 'test1232@tt.est', password: 'string' });
   };
 
   return (

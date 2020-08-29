@@ -1,3 +1,3 @@
-import sessionOperation from './app/sessionOperation';
+import * as params from './app/params';
 
-export default { sessionOperation };
+export default { params };

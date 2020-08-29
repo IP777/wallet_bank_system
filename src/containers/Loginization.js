@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
-import { login } from '../redux/operations/app/sessionOperation';
-import { getIsAuthenticated } from '../redux/selectors/app/sessionSelectors';
+import { login } from '../redux/operations/app/params';
+import { isLoggedInSelector } from '../redux/reducers/app/params';
 import Loginization from '../components/Loginization/Loginization';
 
 const mapStateToProps = (state) => ({
-  authenticated: getIsAuthenticated(state),
+  authenticated: isLoggedInSelector(state),
 });
 
 const mapDispatchToProps = {
