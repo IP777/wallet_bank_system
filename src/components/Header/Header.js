@@ -4,24 +4,14 @@ import { NavLink } from 'react-router-dom';
 import style from './Header.module.css';
 
 const Header = ({ userName, isLoggedIn, logout }) => {
-  const handelLogout = () => {
-    console.log('Click');
-    logout();
-  };
   return (
     <div className={style.wrapper}>
       <NavLink className={style.logo} to="/" />
 
       {isLoggedIn && (
         <div className={style.btnBlock}>
-          <NavLink className={style.loginBtn} to="/login">
-            Имя
-          </NavLink>
-          <button
-            className={style.logoutBtn}
-            to="/login"
-            onClick={handelLogout}
-          />
+          <button className={style.loginBtn}>Имя</button>
+          <button className={style.logoutBtn} onClick={logout} />
         </div>
       )}
     </div>

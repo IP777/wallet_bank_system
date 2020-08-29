@@ -34,18 +34,8 @@ const token = (state = null, { type, payload }) => {
   }
 };
 
-const error = (state = null, { type, payload }) => {
-  switch (type) {
-    case Type.LOGIN_ERROR:
-      return payload.error;
-    default:
-      return state;
-  }
-};
-
-export const rootReducer = combineReducers({
+export default combineReducers({
   user,
   token,
-  error,
   authenticated,
 });
