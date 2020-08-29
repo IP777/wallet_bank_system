@@ -14,11 +14,11 @@ const AsyncStatistics = lazy(() =>
 );
 const AsyncRegistration = lazy(() =>
   import(
-    './pages/registrationPage/RegistrationPage.js' /* webpackChunkName: "Registration-page" */
+    './pages/RegistrationPage/RegistrationPage.js' /* webpackChunkName: "Registration-page" */
   )
 );
 const AsyncLogin = lazy(() =>
-  import('./pages/loginPage/LoginPage.js' /* webpackChunkName: "Login-page" */)
+  import('./pages/LoginPage/LoginPage.js' /* webpackChunkName: "Login-page" */)
 );
 
 const App = () => {
