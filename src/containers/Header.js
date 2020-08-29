@@ -1,8 +1,9 @@
 import { connect } from 'react-redux';
+import * as sessionAction from '../redux/actions/app/sessionAction';
 import Header from '../components/Header/Header';
 
-const mapStateToProps = (state) => ({});
+const mapDispatchToProps = {
+  logout: sessionAction.logOut,
+};
 
-const mapDispatchToProps = {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(null, mapDispatchToProps)(Header);

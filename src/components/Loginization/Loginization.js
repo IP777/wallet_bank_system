@@ -6,9 +6,16 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as EmailIcon } from '../../assets/email.svg';
 import { ReactComponent as PasswordIcon } from '../../assets/lock.svg';
 
-const Loginization = () => {
+const Loginization = ({ onLogin, authenticated }) => {
+  const submitHandle = (e) => {
+    e.preventDefault();
+    console.log('submit');
+    //Заглушка для отправки формы
+    onLogin({ email: 'lol@gmail.com', password: '12345' });
+  };
+
   return (
-    <form className={styles.form} noValidate>
+    <form className={styles.form} onSubmit={submitHandle} noValidate>
       <div className={styles.logo} />
       <div className={styles.wallet} />
       <TextField
@@ -17,7 +24,6 @@ const Loginization = () => {
         required
         fullWidth
         id="email"
-        color="red"
         placeholder="E-mail"
         InputProps={{
           startAdornment: (
@@ -27,6 +33,7 @@ const Loginization = () => {
           ),
         }}
         name="email"
+        type="email"
         autoComplete="email"
         className={styles.input}
       />
@@ -50,6 +57,9 @@ const Loginization = () => {
         className={styles.input}
       />
 
+      <NavLink className={styles.link} to="/">
+        На главную
+      </NavLink>
       <button type="submit" name="login" className={styles.button}>
         Войти
       </button>
